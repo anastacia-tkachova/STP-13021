@@ -1,6 +1,6 @@
 :root {
-  --font-family: "Wendy", sans-serif;
-  --second-family: "Fredoka", sans-serif;
+  --font-family: "Fredoka", sans-serif;
+  --second-family: "Wendy", sans-serif;
   --text-black: #000;
 	--lite-background: #f8fafc;
 	--lite-header: #fff;
@@ -17,7 +17,7 @@
 body {
   font-family: var(--font-family);
   font-size: 14px;
-  color: var(--text-black);
+  color: var(--text-text-primary);
   background-color: var(--lite-background);
   line-height: 1.5;
   font-weight: 400;
@@ -36,30 +36,26 @@ main {
 button,
 input,
 textarea {
-    font: inherit;
+  font: inherit;
 }
 
 html {
-    scroll-behavior: smooth;
+   scroll-behavior: smooth;
 }
 
 button {
-    border: none;
-    background: none;
-}
-
-body.no-scroll {
-  overflow: hidden;
-}
-
-body.is-locked {
-    overflow: hidden;
+  border: none;
+  background: none;
 }
 
 [data-visible='open'] {
+  opacity: 1;
+  visibility: visible;
   display: flex;
 }
 
 [data-visible='close'] {
+  opacity: 0;
+  visibility: hid den;
   display: none;
 }

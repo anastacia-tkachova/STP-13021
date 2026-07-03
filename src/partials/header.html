@@ -1,18 +1,21 @@
 <header id="header" class="header">
   <div class="container header-container">
     <div class="header-logo">
-      <img
-        class="header-logo-img"
-        src="./img/logo-png.png"
-        alt="Match Delivery Home"
-        width="60"
-        height="58"
-      />
-      <div class="header-logo-div">
-        <p class="header-logo-text">Match</p>
-        <p class="header-logo-text">Delivery</p>
-        <p class="header-logo-3d">Triple Match 3D</p>
-      </div>
+      <a class="header-logo-link" href="./index.html" aria-label="Home Page logo">
+        <img
+          class="header-logo-img"
+          src="./img/header-logo-png.png"
+          alt="Match Delivery Home"
+          width="60"
+          height="58"
+        />
+        <div class="header-logo-div">
+          <p class="header-logo-text">Match</p>
+          <p class="header-logo-text">Delivery</p>
+          <p class="header-logo-3d">Triple Match 3D</p>
+        </div>
+      </a>
+
     </div>
 
     <nav class="header-nav nav" aria-label="Main navigation">
@@ -53,49 +56,17 @@
       aria-expanded="false"
       data-action="open"
     >
-      <span></span>
-      <span></span>
-      <span></span>
+      <svg class="burger-menu" width="37" height="36" data-visible="open">
+        <use href="{=$icon-burger-menu}"></use>
+      </svg>
+
+      <span class="burger-close" data-visible="close">x</span>
     </button>
   </div>
 
     <div class="mobile-menu" data-visible="close">
       <div class="mobile-menu__overlay" data-menu-overlay>
         <div class="container mobile-menu__panel">
-          <div class="mobile-menu__top">
-            <a
-              href="#header"
-              class="mobile-menu-logo logo"
-              aria-label="Match Delivery Home"
-            >
-              <img
-                class="mobile-logo-img"
-                src="../img/logo-png.png"
-                alt="Match Delivery Home"
-                width="45"
-                height="44"
-              />
-              <div class="mobile-logo-div">
-                <p class="mobile-logo-text">Match</p>
-                <p class="mobile-logo-text">Delivery</p>
-                <p class="mobile-logo-3d">Triple Match 3D</p>
-              </div>
-            </a>
-
-            <button
-              class="mobile-menu__close"
-              type="button"
-              aria-label="Закрити меню"
-              data-action="close"
-            >
-              <svg class="close-x">
-                <use href="/icons/icons.svg#icon-x"></use>
-              </svg>
-            </button>
-
-
-          </div>
-
           <nav class="mobile-nav nav" aria-label="Main navigation">
             <ul class="mobile-nav-list">
               <li class="mobile-nav-item">
