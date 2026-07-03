@@ -1,24 +1,13 @@
-// const burgerBtn = document.querySelector('.burger-btn');
-// const mobileMenu = document.querySelector('.mobile-menu');
-// const closeBtn = document.querySelector('.close-btn');
-// const mobileLinks = document.querySelectorAll('.mobile-menu a');
+const openBtnEl = document.querySelector('[data-action="open"]');
+const closeBtnEl = document.querySelector('[data-action="close"]');
+const burgerMenuEl = document.querySelector('[data-visible]');
 
-// // Відкриття меню
-// burgerBtn.addEventListener('click', () => {
-//   mobileMenu.classList.add('open');
-//   document.body.classList.add('no-scroll');
-// });
+// Відкриття меню
+burgerBtn.addEventListener('click', () => {
+  const closeBtnEl = document.querySelector('[data-action="close"]');
+});
 
-// // Закриття меню кнопкою Х
-// closeBtn.addEventListener('click', () => {
-//   mobileMenu.classList.remove('open');
-//   document.body.classList.remove('no-scroll');
-// });
-
-// // Закриття меню після кліку на пункт
-// mobileLinks.forEach(link => {
-//   link.addEventListener('click', () => {
-//     mobileMenu.classList.remove('open');
-//     document.body.classList.remove('no-scroll');
-//   });
-// });
+// Закриття меню кнопкою Х
+closeBtnEl.addEventListener('click', e => {
+  burgerMenuEl.dataset.visible = 'close';
+});

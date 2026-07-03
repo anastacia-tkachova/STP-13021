@@ -3,7 +3,7 @@
     <div class="header-logo">
       <img
         class="header-logo-img"
-        src="{=$icon-logo-png}"
+        src="./img/logo-png.png"
         alt="Match Delivery Home"
         width="60"
         height="58"
@@ -51,7 +51,7 @@
       type="button"
       aria-label="Open menu"
       aria-expanded="false"
-      data-menu-open
+      data-action="open"
     >
       <span></span>
       <span></span>
@@ -59,7 +59,7 @@
     </button>
   </div>
 
-    <div class="mobile-menu is-hidden" data-mobile-menu>
+    <div class="mobile-menu" data-visible="close">
       <div class="mobile-menu__overlay" data-menu-overlay>
         <div class="container mobile-menu__panel">
           <div class="mobile-menu__top">
@@ -86,7 +86,7 @@
               class="mobile-menu__close"
               type="button"
               aria-label="Закрити меню"
-              data-menu-close
+              data-action="close"
             >
               <svg class="close-x">
                 <use href="/icons/icons.svg#icon-x"></use>
@@ -117,11 +117,11 @@
           </nav>
 
           <div class="mobile-policy-service">
-            <a class="mobile-link-policy" href="../privacy-policy.html"
+            <a class="mobile-link-policy" href="./privacy-policy.html"
               >Privacy Policy</a
             >
             <div class="mobile-line"></div>
-            <a class="mobile-link-policy" href="../terms-of-service.html"
+            <a class="mobile-link-policy" href="./terms-of-service.html"
               >Terms of Service</a
             >
           </div>
