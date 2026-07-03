@@ -26,10 +26,6 @@
   color: #f8fafc;
 }
 .end-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
   text-decoration: none;
   color: inherit;
   border-radius: 8px;
@@ -37,6 +33,12 @@
   min-width: 202px;
   background-color: #e5e7eb;
   margin-bottom: 8px;
+}
+.end-btn-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 .end-address {
   display: flex;
