@@ -69,12 +69,12 @@
     opacity var(--transition),
     visibility var(--transition);
 }
-.mobile-menu__overlay {
+.mobile-menu-overlay {
   position: absolute;
   inset: 0;
   z-index: -1;
 }
-.mobile-menu__panel {
+.mobile-menu-panel {
   position: relative;
   z-index: 2;
   width: 100%;
@@ -85,7 +85,7 @@
   flex-direction: column;
   justify-content: space-between;
 }
-.mobile-menu__close {
+.mobile-menu-close {
   position: absolute;
   top: 18px;
   right: 22px;
