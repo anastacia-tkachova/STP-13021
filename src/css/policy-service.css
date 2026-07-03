@@ -1,0 +1,92 @@
+.back-link {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--text-text-primary);
+}
+.back-link-icon {
+  fill: var(--text-text-primary);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.back-link:active,
+.back-link:focus {
+  color: var(--cta-tap);
+}
+.back-link:active .back-link-icon,
+.back-link:focus .back-link-icon {
+  fill: var(--cta-tap);
+}
+.policy-main-title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 28px;
+  color: var(--text-text-primary);
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.policy-text {
+  font-family: var(--second-family);
+  font-size: 18px;
+  line-height: 1;
+  color: var(--text-text-secondary);
+}
+.policy-product-name {
+  font-weight: 700;
+  font-family: var(--font-family);
+  color: var(--text-text-primary);
+}
+.policy-title {
+  font-family: var(--second-family);
+  font-size: 20px;
+  margin-top: 20px;
+}
+.policy-sub-title {
+  font-family: var(--second-family);
+  font-size: 18px;
+  color: var(--text-black);
+  margin-top: 4px;
+}
+.policy-list {
+  list-style: disc;
+  list-style-position: unset;
+  margin-left: 24px;
+  line-height: 1.0;
+}
+.policy-list-item {
+  font-family: var(--second-family);
+  font-size: 18px;
+  color: var(--text-text-secondary);
+}
+.policy-list-item::marker {
+  color: var(--text-text-secondary);
+}
+.policy-app-link {
+  font-weight: 700;
+  font-family: var(--font-family);
+  color: var(--text-text-primary);
+}
+.policy-app-link:active,
+.policy-app-link:focus {
+  color: var(--cta-tap);
+}
+.policy-main-text {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--text-black);
+  max-width: 570px;
+}
+.terms-text {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1440px) {
+  .policy-app-link:hover{
+    color: var(--cta-pimary);
+  }
+  .back-link:hover {
+    color: var(--cta-pimary);
+  }
+  .back-link:hover .back-link-icon {
+    fill: var(--cta-pimary);
+  }
+}

@@ -1,6 +1,6 @@
 :root {
   --font-family: "Fredoka", sans-serif;
-  --second-family: "Wendy", sans-serif;
+  --second-family: "Wendy One", sans-serif;
   --text-black: #000;
 	--lite-background: #f8fafc;
 	--lite-header: #fff;
@@ -35,17 +35,22 @@ main {
 
 button,
 input,
-textarea {
+textarea,
+a {
   font: inherit;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+              color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 html {
-   scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 button {
   border: none;
   background: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+              color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 [data-visible='open'] {
