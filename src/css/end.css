@@ -7,6 +7,9 @@
   box-shadow: 10px 10px 19px 0 rgba(0, 0, 0, 0.35);
   background: #6d5dfc;
 }
+.end-basket {
+  display: none;
+}
 .end-ready {
   display: flex;
   justify-content: center;
@@ -23,7 +26,7 @@
   font-size: 18px;
   color: #f8fafc;
 }
-.end-div-btn {
+.end-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,4 +59,31 @@
   font-weight: 400;
   font-size: 14px;
   color: #f8fafc;
+}
+
+.end-logo-desktop {
+  display: none;
+}
+
+@media only screen and (min-width: 1440px) {
+  .end-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 32px;
+  }
+  .end-basket {
+    display: block;
+  }
+  .end-logo-img {
+    display: none;
+  }
+
+  .end-ready-text {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 32px;
+  }
+  .end-logo-desktop {
+    display: flex;
+  }
 }
