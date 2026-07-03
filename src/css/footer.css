@@ -30,10 +30,14 @@
 .footer-logo-3d {
   font-family: 'Fredoka', sans-serif;
   border-radius: 4px;
-  padding: 2px;
-  width: 83px;
-  height: 16px;
   background-color: #5e4cff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 10px;
+  color: #e5e7eb;
+  padding: 3px 0;
 }
 
 .footer-policy-service {
@@ -64,11 +68,12 @@
 }
 @media only screen and (min-width: 1440px) {
   .footer-container {
+    display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   .footer-logo {
     display: flex;
+    gap: 18px;
   }
 }
-zs
