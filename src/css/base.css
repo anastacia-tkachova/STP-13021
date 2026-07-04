@@ -61,6 +61,10 @@ button {
 
 [data-visible='close'] {
   opacity: 0;
-  visibility: hid den;
+  visibility: hidden;
   display: none;
+}
+
+body[data-scroll='lock'] {
+  overflow: hidden;
 }

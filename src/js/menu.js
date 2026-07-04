@@ -1,5 +1,6 @@
 const burgerBtnEl = document.querySelector('[data-action="open"]');
 const burgerMenuEl = document.querySelector('.mobile-menu[data-visible]');
+const bodyEl = document.body;
 
 burgerBtnEl.addEventListener('click', () => {
   const isOpen = burgerMenuEl.dataset.visible === 'open';
@@ -9,12 +10,16 @@ burgerBtnEl.addEventListener('click', () => {
 
   if (isOpen) {
     burgerMenuEl.dataset.visible = 'close';
+
     iconEl.dataset.visible = 'open';
     letterEl.dataset.visible = 'close';
+    bodyEl.removeAttribute('data-scroll');
   } else {
     burgerMenuEl.dataset.visible = 'open';
+
     iconEl.dataset.visible = 'close';
     letterEl.dataset.visible = 'open';
+    bodyEl.setAttribute('data-scroll', 'lock');
   }
 });
 
@@ -28,5 +33,6 @@ menuLinks.forEach(link => {
 
     iconEl.dataset.visible = 'open';
     letterEl.dataset.visible = 'close';
+    bodyEl.removeAttribute('data-scroll');
   });
 });
