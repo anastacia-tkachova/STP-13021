@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 16px 0;
   border-radius: 20px;
   box-shadow: 10px 10px 19px 0 rgba(0, 0, 0, 0.35);
   background: #6d5dfc;
@@ -14,15 +15,13 @@
   justify-content: center;
   align-items: center;
 }
-.end-div-text {
-  display: flex;
-  flex-direction: column;
-}
 
-.end-ready-text {
+.end-title {
+  font-family: var(--second-family);
   font-weight: 400;
   font-size: 18px;
   color: #f8fafc;
+  margin: 0;
 }
 .end-btn {
   display: flex;
@@ -35,36 +34,39 @@
   border-radius: 8px;
   background: #e5e7eb;
   text-decoration: none;
+  cursor: pointer;
   transition:
-    background-color 0.3s ease,
-    color 0.3s ease;
+    background-color 250ms ease,
+    color 250ms ease,
+    transform 250ms ease;
   margin-bottom: 8px;
 }
-.end-btn-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
+
 .end-address {
   display: flex;
-  gap: 2px;
+  align-items: center;
+  gap: 10px;
 }
 .end-address-svg {
   stroke: #f8fafc;
   fill: transparent;
 }
+.end-svg {
+  flex-shrink: 0;
+}
 .end-link-text {
-  font-weight: 400;
+  font-weight: 600;
   font-size: 12px;
   letter-spacing: -0.02em;
   color: #111827;
-  transition: color 0.3s ease;
+  transition: color 250ms ease;
 }
 .end-link-email {
-  font-weight: 400;
+  font-weight: 600;
   font-size: 14px;
   color: #f8fafc;
+  font-style: normal;
+  white-space: nowrap;
 }
 
 .end-logo-desktop {
@@ -73,7 +75,6 @@
 
 @media only screen and (min-width: 1440px) {
   .end-container {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 20px 32px;
@@ -85,7 +86,7 @@
     display: none;
   }
 
-  .end-ready-text {
+  .end-title {
     font-size: 32px;
   }
   .end-logo-desktop {
@@ -93,6 +94,7 @@
   }
   .end-btn:hover {
     background: #f8fafc;
+    transform: translateY(-2px);
   }
 
   .end-btn:hover .end-link-text {

@@ -15,20 +15,24 @@
 .about-img-desktop {
   display: none;
   border-radius: 20px;
-  box-shadow: 6px 6px 10px 0 rgba(0, 0, 0, 0.35);
+  box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.35);
 }
 .about-title {
-  font-family: 'Wendy One', sans-serif;
+  font-family: var(--second-family);
   font-weight: 400;
   font-size: 26px;
-  color: #4134b2;
+  color: var(--text-text);
+  margin: 0;
+}
+.desktop-break {
+  display: none;
 }
 .about-puzzle-text {
-  font-family: 'Fredoka One', sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 24px;
   text-align: center;
-  color: #111827;
+  color: var(--text-text-primary);
+  margin: 0;
 }
 .about-img {
   border-radius: 20px;
@@ -41,14 +45,15 @@
   gap: 8px;
 }
 .about-span {
-  color: #111827;
+  color: inherit;
 }
 .about-text {
-  font-family: 'Wendy One', sans-serif;
+  font-family: var(--second-family);
   font-weight: 400;
   font-size: 20px;
   text-align: center;
-  color: #6b7280;
+  color: var(--text-text-secondary);
+  margin: 0;
 }
 .about-features {
   display: flex;
@@ -63,18 +68,19 @@
 }
 
 .about-feature-title {
-  font-family: 'Wendy One', sans-serif;
+  font-family: var(--second-family);
   font-weight: 400;
   font-size: 18px;
-  color: #111827;
+  color: var(--text-text-primary);
+  margin: 0;
 }
 
 .about-feature-text {
-  font-family: 'Fredoka One', sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 12px;
   letter-spacing: -0.02em;
-  color: #6b7280;
+  color: var(--text-text-secondary);
+  margin: 0;
 }
 .about-feature-icon {
   width: 64px;
@@ -91,6 +97,9 @@
 @media only screen and (min-width: 1440px) {
   .about-img-desktop {
     display: block;
+    width: 552px;
+    height: 408px;
+    flex-shrink: 0;
   }
   .about-img {
     display: none;
@@ -101,30 +110,37 @@
     gap: 24px;
   }
   .about-title {
-  font-size: 20px;
-}
-.about-puzzle-text {
-  font-size: 28px;
-  text-align: left;
- 
-}
-.about-content {
-  align-items: flex-start;
+    font-size: 20px;
+    margin-bottom: 24px;
   }
-.about-text {
-  text-align: left;
+
+  .desktop-break {
+    display: inline;
+  }
+  .about-puzzle-text {
+    font-size: 28px;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .about-content {
+    align-items: flex-start;
+    gap: 0;
+  }
+  .about-text {
+    text-align: left;
   }
   .about-span {
-  color: #4134b2;
-}
-.about-div-text {
-  align-items: flex-start;
+    color: var(--text-text);
   }
-.about-features {
-  flex-direction: row;
-  justify-content: space-between;
+  .about-div-text {
+    align-items: flex-start;
+    gap: 10px;
   }
-.about-feature {
-  align-items: flex-start;
+  .about-features {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .about-feature {
+    align-items: flex-start;
   }
 }
