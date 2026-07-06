@@ -5,7 +5,7 @@
 }
 .back-link-icon {
   fill: var(--text-text-primary);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms ease;
 }
 .back-link:active,
 .back-link:focus {

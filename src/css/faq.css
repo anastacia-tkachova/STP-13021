@@ -25,7 +25,6 @@
 .faq-content {
   width: 100%;
   display: flex;
-
   justify-content: center;
 }
 .faq-list {
@@ -39,8 +38,7 @@
   border-radius: 6px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.4);
   background: var(--lite-header);
-  transition: box-shadow 250 ease,
-              fill 250 ease;
+  transition: fill 250ms ease;
 }
 .faq-question {
   display: flex;
@@ -70,7 +68,6 @@
 }
 .faq-pic {
   display: none;
-  transition: transform 250 ease;
 }
 
 @media only screen and (min-width: 1440px) {
@@ -95,12 +92,14 @@
     width: 552px;
   }
   .faq-answear-text {
-    font-family: var(--text-text-secondary);
+    font-family: var(--second-family);
+    font-weight: 400;
     max-width: 528px;
     font-size: 18px;
   }
   .faq-pic {
     display: block;
+    transition: transform 250ms ease;
   }
   .faq-content:hover .faq-pic {
     transform: scale(1.1) translateX(8px) translateY(8px);
