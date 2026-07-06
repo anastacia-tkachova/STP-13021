@@ -5,16 +5,16 @@
   gap: 24px;
 }
 .gallery-title {
-  font-family: 'Wendy One', sans-serif;
+  font-family: var(--second-family);
   font-weight: 400;
   font-size: 26px;
-  color: #4134b2;
+  color: var(--text-text);
 }
 .gallery-title-text {
   font-weight: 600;
   font-size: 24px;
   text-align: center;
-  color: #111827;
+  color: var(--text-text-primary);
 }
 .gallery-text-button {
   display: flex;
@@ -25,12 +25,15 @@
 .gallery-button {
   display: none;
   border: none;
-  background: transparent;
+  background-color: transparent;
   padding: 0;
   cursor: pointer;
 }
 .gallery-arrow {
-  fill: #6d5dfc;
+  fill: var(--cta-pimary);
+  transition:
+    fill 250ms ease,
+    transform 250ms ease;
 }
 .gallery-slider {
   width: 100%;
@@ -68,5 +71,20 @@
   }
   .gallery-img {
     max-width: 277px;
+  }
+  .gallery-next:hover .gallery-arrow {
+    fill: var(--cta-hover);
+    transform: translateX(6px);
+  }
+  .gallery-prev:hover .gallery-arrow {
+    fill: var(--cta-hover);
+    transform: translateX(-6px);
+  }
+  .gallery-button:focus-visible .gallery-arrow {
+    fill: var(--cta-tap);
+  }
+
+  .gallery-button:focus-visible {
+    outline: none;
   }
 }
