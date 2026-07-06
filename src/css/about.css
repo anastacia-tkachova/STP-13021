@@ -100,6 +100,7 @@
 @media only screen and (min-width: 1440px) {
   .about-img-desktop {
     display: block;
+    transition: transform 300ms ease;
   }
   .about-img {
     display: none;
@@ -142,6 +143,9 @@
   }
   .about-feature {
     align-items: flex-start;
+  }
+  .about-img-desktop:hover {
+    transform: scale(1.03);
   }
   .about-feature:hover .about-feature-icon {
     transform: scale(1.08);
