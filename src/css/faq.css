@@ -1,0 +1,108 @@
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.faq-title-main {
+  font-family: var(--second-family);
+  font-size: 26px;
+  color: var(--text-text);
+}
+.faq-questions-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.faq-title-text {
+  font-family: var(--second-family);
+  font-size: 18px;
+  color: var(--text-text-primary);
+  margin-bottom: 10px;
+}
+.faq-content {
+  width: 100%;
+  display: flex;
+
+  justify-content: center;
+}
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.faq-item {
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.4);
+  background: var(--lite-header);
+  transition: box-shadow 250 ease,
+              fill 250 ease;
+}
+.faq-question {
+  display: flex;
+  padding: 0px 12px;
+  width: 343px;
+  height: 48px;
+  align-items: center;
+  justify-content: space-between;
+  fill: var(--text-text);
+}
+.faq-question-text {
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: -0.02em;
+  color: var(--text-text-primary);
+}
+.faq-answear {
+  padding: 12px;
+  width: 343px;
+}
+.faq-answear-text {
+  max-width: 319px;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: -0.02em;
+  color: var(--text-text-secondary);
+}
+.faq-pic {
+  display: none;
+  transition: transform 250 ease;
+}
+
+@media only screen and (min-width: 1440px) {
+  .faq-content {
+    justify-content: space-between;
+  }
+  .faq-question {
+    width: 552px;
+    height: 48px;
+  }
+  .faq-title-text {
+    font-size: 20px;
+  }
+  .faq-question-text {
+    font-size: 20px;
+  }
+  .faq-item:hover .faq-question-icon-to-open,
+  .faq-item:hover .faq-question-icon-to-close{
+    fill: var(--cta-hover);
+  }
+  .faq-answear {
+    width: 552px;
+  }
+  .faq-answear-text {
+    font-family: var(--text-text-secondary);
+    max-width: 528px;
+    font-size: 18px;
+  }
+  .faq-pic {
+    display: block;
+  }
+  .faq-content:hover .faq-pic {
+    transform: scale(1.1) translateX(8px) translateY(8px);
+  }
+}
