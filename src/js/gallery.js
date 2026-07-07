@@ -3,7 +3,7 @@ import { Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-const swiper = new Swiper('.gallery-slider', {
+const swiper = new Swiper('[data-gallery-slider]', {
   modules: [Navigation, Autoplay],
 
   loop: true,
@@ -11,8 +11,8 @@ const swiper = new Swiper('.gallery-slider', {
   grabCursor: true,
 
   navigation: {
-    nextEl: '.gallery-next',
-    prevEl: '.gallery-prev',
+    nextEl: '[data-gallery-next]',
+    prevEl: '[data-gallery-prev]',
   },
 
   autoplay: {

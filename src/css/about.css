@@ -34,7 +34,6 @@
   font-size: 20px;
   text-align: center;
   color: var(--text-text-primary);
-  max-width: 500px;
   margin: 0;
 }
 .about-img {
@@ -45,7 +44,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 500px;
   gap: 8px;
 }
 .about-span {

@@ -2,7 +2,7 @@
   background-image: url(../img/start-1x.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: 375px auto;
   margin: 0 auto;
 }
 #hero {
