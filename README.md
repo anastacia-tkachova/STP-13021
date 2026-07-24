@@ -1,33 +1,40 @@
 # Match Delivery - Puzzle game website
 
+> High-quality, responsive landing page for a Match Delivery - Puzzle game.
+
+[🎮 Live Page](https://anastacia-tkachova.github.io/STP-13021/)
 ![Preview](./assets/screenshot.jpg)
 
 ---
 
 ## 🛠 Tech Stack
-Javascript, HTML, CSS
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
 ---
 
-## Developers
-
-- [@Anastacia-Tkachova](https://github.com/anastacia-tkachova)
-- [@Andrii-Mitko](https://github.com/Andrii-Mitko)
-
-## Designer
-
-- [@PSUAH1(t.me)](https://t.me/PSUAH1)
-
----
-
-## Features
+## 🚀 Features
 
 - Live animations
 - Cross platform
 
 ---
 
-## Run Locally
+## 👥 Team
+
+### Developers
+
+- [@Anastacia-Tkachova](https://github.com/anastacia-tkachova)
+- [@Andrii-Mitko](https://github.com/Andrii-Mitko)
+
+### Designer
+
+- [@PSUAH1(t.me)](https://t.me/PSUAH1)
+
+---
+
+## 💻 Run Locally
 
 Clone the project
 
@@ -38,7 +45,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd my-project
+  cd STP-13021
 ```
 
 Install dependencies
