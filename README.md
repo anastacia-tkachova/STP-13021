@@ -1,8 +1,8 @@
 # Match Delivery - Puzzle game website
 
-> High-quality, responsive landing page for a Match Delivery - Puzzle game.
+> High-quality, responsive landing page for the "Match Delivery" puzzle game.
 
-[🎮 Live Page](https://anastacia-tkachova.github.io/STP-13021/)
+[🌐 Visit Landing Page](https://anastacia-tkachova.github.io/STP-13021/)
 
 ![Preview](./assets/screenshot.jpg)
 
