@@ -3,6 +3,7 @@
 > High-quality, responsive landing page for a Match Delivery - Puzzle game.
 
 [🎮 Live Page](https://anastacia-tkachova.github.io/STP-13021/)
+
 ![Preview](./assets/screenshot.jpg)
 
 ---
